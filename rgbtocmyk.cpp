@@ -61,9 +61,9 @@ int main()
 
 void isValid(deque<float> colors)
 {
-  // for (int i = 0; i < colors.size(); i++)
-  // if (colors[i] < 0 || colors[i] > 255)
-  // colors.erase(colors.begin() + i, colors.begin() + (i + 2));
+  for (int i = 0; i < colors.size(); i++)
+  if (colors[i] < 0 || colors[i] > 255)
+  colors.erase(colors.begin() + i, colors.begin() + (i + 2));
 }
 
 float maximum(float red, float green, float blue)
